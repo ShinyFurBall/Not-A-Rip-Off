@@ -1,0 +1,114 @@
+/*background*/
+
+body
+{
+    margin: 0;
+    font-size: 20px;
+    font-family: "Poiret One", serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    background-color: whitesmoke;
+    color: #303030;
+    
+}
+
+/**/
+/*fonts*/
+/**/
+
+.poiret-one 
+{
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/**/
+/*navbar*/
+/**/
+
+.navbar 
+{
+    background-color:#3e7efd;
+    position: fixed;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+}
+
+.nav-link 
+{
+    font-size: 24px;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.nav-link:hover 
+{
+    color: #ffa600;
+}
+
+
+/**/
+/*selection*/
+/**/
+
+.btn
+{
+    background-color: #ffcc00;
+
+    
+}
+/**/
+/*money banner*/
+/**/
+
+
+.money-banner
+{
+    background-color: #75bfff;
+    color: #303030;
+    text-align: center;
+    padding: 60px 0;
+}
+
+/**/
+/*career banner*/
+/**/
+
+
+.career-hero {
+    height: 60vh;
+    background-image: url("../image/career.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.career-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.career-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/**/
+/*footer*/
+/**/
+
+.footer
+{
+    background-color: #cae4fd;
+    text-align: center;
+    padding: 20px 0;
+}
