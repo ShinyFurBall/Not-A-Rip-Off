@@ -1,0 +1,142 @@
+rewrite the js based on this html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IDEA || Career</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="JS/script.js"></script>
+</head>
+
+<body>
+    <!--Navbar-->
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+            <img src="image/idea.png" width="115">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="money.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="career.html">Career</a>
+                    </li>
+                </ul>
+                <li class="nav-item">
+                    <a href="#" class="nav-link d-flex align-items-center" id="auth-btn">
+                        <img src="image/profile.png" style="width:25px; height:25px; margin-left:8px;">
+                        <span id="auth-text">Login</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+   <!-- Auth Popup -->
+    <div id="auth-popup" class="auth-popup-overlay" style="display:none; justify-content:center; align-items:center; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1000;">
+        <div class="auth-popup-content p-4 bg-white rounded" style="max-width:400px; width:90%;">
+            <!-- Log In Form -->
+            <div id="login-form">
+                <h4 class="mb-3">Log In</h4>
+                <input type="text" id="login-name" class="form-control mb-2" placeholder="Full Name">
+                <input type="password" id="login-password" class="form-control mb-3" placeholder="Password">
+                <button id="login-submit" type="button" class="btn btn-primary w-100">Log In</button>
+                <p class="mt-3 mb-0 text-center">
+                    Don't have an account? <a href="#" id="switch-to-signup">Sign Up</a>
+                </p>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div id="signup-form" style="display:none;">
+                <h4 class="mb-3">Sign Up</h4>
+                <input type="text" id="signup-name" class="form-control mb-2" placeholder="Full Name">
+                <input type="password" id="signup-password" class="form-control mb-3" placeholder="Password">
+                <button id="signup-submit" type="button" class="btn btn-primary w-100">Sign Up</button>
+                <p class="mt-3 mb-0 text-center">
+                    Already have an account? <a href="#" id="switch-to-login">Log In</a>
+                </p>
+            </div>
+
+            <button id="auth-close" type="button" class="btn btn-secondary w-100 mt-2">Cancel</button>
+        </div>
+    </div>
+
+    <!--Booking Form-->
+    <section class="container py-5 booking-form-container" style="max-width:600px; margin-top:50px;">
+        <h2 class="text-center mb-4 booking-title">Book Your Interior Design Service</h2>
+
+        <form class="booking-form">
+            <div class="mb-3">
+                <input type="text" class="form-control booking-name" placeholder="Your Name" required>
+            </div>
+
+            <div class="mb-3">
+                <input type="email" class="form-control booking-email" placeholder="Your Email" required>
+            </div>
+
+            <div class="mb-3">
+                <select class="form-control booking-service" required>
+                    <option value="" disabled selected>Select Service</option>
+                    <option value="Residential Design">Residential Design</option>
+                    <option value="Office Design">Office Design</option>
+                    <option value="Commercial Design">Commercial Design</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <select class="form-control booking-location" required>
+                    <option value="" disabled selected>Property Location</option>
+                    <option value="Penang">Penang</option>
+                    <option value="Kuala Lumpur">Kuala Lumpur</option>
+                     <option value="Selangor">Selangor</option>
+                    <option value="Johor">Johor</option>
+                </select>
+            </div>
+
+            <button type="button" class="btn booking-preview-btn">Book Now!</button>
+        </form>
+    </section>
+
+    <!-- Booking Preview Popup -->
+    <div class="booking-popup-overlay">
+        <div class="booking-popup">
+            <h3>Booking Preview</h3>
+            <p class="popup-name"></p>
+            <p class="popup-email"></p>
+            <p class="popup-service"></p>
+            <p class="popup-location"></p>
+            <button class="popup-close-btn">Close</button>
+        </div>
+    </div>
+    
+    <div class="space"></div>
+
+    <!-- FOOTER -->
+
+    <section class="footer">
+        <div class="container">
+            <p>© 2026 IDEA Inc | All Rights Reserved</p>
+        </div>
+    </section>
+</body>
+
+</html>
